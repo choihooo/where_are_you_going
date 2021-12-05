@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header style="margin-top: 2%">
+      <img
+        src="/img/logo.png"
+        alt="logo"
+        style="
+          width: 5%;
+          margin-left: 5%;
+          display: inline;
+          vertical-align: bottom;
+        "
+      />
+      <h1 style="display: inline; margin-left: 33.5%; margin-right: auto">
+        어디로 갈래?
+      </h1>
+      <div
+        style="
+          width: 90%;
+          margin: auto;
+          margin-top: 2%;
+          background-color: #b4c6a6;
+          padding-top: 1%;
+          padding-bottom: 1%;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-around;
+        "
+      >
+        <a style="font-weight: bold; font-size: 1.2em">기차 조회</a>
+        <a style="font-weight: bold; font-size: 1.2em">기차역 주변 맛집</a>
+        <a style="font-weight: bold; font-size: 1.2em">여행 일지</a>
+      </div>
+    </header>
+    <main style="margin-top: 5%">
+      <div
+        style="
+          width: 85%;
+          margin: auto;
+          background-color: #b4c6a6;
+          padding-top: 2%;
+          padding-top: 2%;
+        "
+      >
+        <form>
+          <div style="display: flex; justify-content: space-around">
+            <input
+              type="text"
+              placeholder="출발역"
+              name="departure_station"
+              style="
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                border-radius: 15px;
+                border: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                outline: 0;
+                text-decoration: none;
+              "
+            />
+            <span style="font-size: 1.5em">➔</span>
+            <input
+              type="text"
+              placeholder="도착역"
+              name="reaching_station"
+              style="
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                border-radius: 15px;
+                border: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                outline: 0;
+                text-decoration: none;
+              "
+            />
+            <input
+              type="date"
+              name="schedule"
+              style="
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+                border-radius: 15px;
+                border: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                outline: 0;
+                text-decoration: none;
+              "
+            />
+            <input
+              type="submit"
+              name="search"
+              value="검색"
+              style="border-radius: 15px; border: none"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
