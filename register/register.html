@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where are u going?</title>
+</head>
+
+<body>
+  <header style="margin-top: 2%">
+    <img src="/img/logo.png" alt="logo" style="
+        width: 5%;
+        height: 5%;
+        margin-left: 5%;
+        display: inline;
+        vertical-align: bottom;
+      " />
+    <h1 style="display: inline; margin-left: 33.5%; margin-right: auto">
+      어디로 갈래?
+    </h1>
+    <div style="
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        background-color: #b4c6a6;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+      ">
+      <a style="font-weight: bold; font-size: 1.2em">기차 조회</a>
+      <a style="font-weight: bold; font-size: 1.2em">기차역 주변 맛집</a>
+      <a style="font-weight: bold; font-size: 1.2em">여행 일지</a>
+    </div>
+  </header>
+  <sub>
+    <div
+      style="background-color: #b4c6a6; margin-top: 5%; width: 80%; margin-left: 10%; padding-top: 1%; height: 500px;">
+      <h1 style="display: inline; font-size: 50px; margin-left: 45%; margin-right: auto; background-color: cornsilk;">
+        회원가입
+      </h1>
+      <div style="background-color: #b4c6a6; margin-top: 3%;">
+        <table style="margin-left: 25%; margin-right: auto; height: 200px; font-size: 30px; background-color: cornsilk; border-radius: 30px;">
+          <tr>
+            <td width="5%" align="center"></td>
+            <td width="20%">아이디</td>
+            <td><input type="text" name="userId" id="id" style="font-size: 30px;" placeholder="아이디"></td>
+          </tr>
+          <tr>
+            <td width="5%" align="center"></td>
+            <td width="20%">비밀번호</td>
+            <td><input type="password" name="userPW" id="pw" onchange="check_pw()" style="font-size: 30px;" placeholder="비밀번호"></td>
+          </tr>
+          <tr>
+            <td width="5%" align="center"></td>
+            <td width="20%">비밀번호 확인</td>
+            <td><input type="password" name="userPW2" id="pw2" onchange="check_pw()" style="font-size: 30px;" placeholder="비밀번호 확인">&nbsp;<span
+                id="check"></span></td>
+          </tr>
+          <tr>
+            <td width="5%" align="center"></td>
+            <td width="20%">닉네임</td>
+            <td><input type="nickname" name="userName" id="name" style="font-size: 30px;" placeholder="닉네임"></td>
+          </tr>
+          <tr>
+            <td width="5%" align="center"></td>
+            <td width="20%">생년월일</td>
+            <td><input type="date" name="userDate" id="date" style="font-size: 30px;"></td>
+          </tr>
+          <tr>
+            <td width="5%" align="center"></td>
+            <td><button style="font-size: 30px; width: 80%; margin-left: 170%; background-color: #b4c6a6; border-radius: 30px;">SIGN UP</button></td>
+          </tr>
+        </table>
+        
+      </div>
+    </div>
+    <script>
+      function check_pw(){
+          var pw = document.getElementById('pw').value;
+          var SC = ["!","@","#","$","%"];
+          var check_SC = 0;
+
+          if(pw.length < 6 || pw.length>16){
+              window.alert('비밀번호는 6글자 이상, 16글자 이하만 이용 가능합니다.');
+              document.getElementById('pw').value='';
+          }
+          for(var i=0;i<SC.length;i++){
+              if(pw.indexOf(SC[i]) != -1){
+                  check_SC = 1;
+              }
+          }
+          if(check_SC == 0){
+              window.alert('!,@,#,$,% 의 특수문자가 들어가 있지 않습니다.')
+              document.getElementById('pw').value='';
+          }
+          if(document.getElementById('pw').value !='' && document.getElementById('pw2').value!=''){
+              if(document.getElementById('pw').value==document.getElementById('pw2').value){
+                  document.getElementById('check').innerHTML='비밀번호가 일치합니다.'
+                  document.getElementById('check').style.color='blue';
+              }
+              else{
+                  document.getElementById('check').innerHTML='비밀번호가 일치하지 않습니다.';
+                  document.getElementById('check').style.color='red';
+              }
+          }
+      }
+  </script>
+
+  </sub>
+
+</body>
+
+</html>
