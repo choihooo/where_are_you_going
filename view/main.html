@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where are u going?</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+  <header style="margin-top: 2%">
+    <img src="/img/logo.png" alt="logo" style="
+        width: 5%;
+        height: 5%;
+        margin-left: 5%;
+        display: inline;
+        vertical-align: bottom;
+      " />
+    <h1 style="display: inline; margin-left: 33.5%; margin-right: auto">
+      어디로 갈래?
+    </h1>
+    <div style="
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        background-color: #b4c6a6;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+      ">
+      <a style="font-weight: bold; font-size: 1.2em">기차 조회</a>
+      <a style="font-weight: bold; font-size: 1.2em">기차역 주변 맛집</a>
+      <a style="font-weight: bold; font-size: 1.2em">여행 일지</a>
+    </div>
+  </header>
+  <main>
+    <div style="width: 80%; margin: auto; background-color: snow;">
+      <p style="text-align: center;"><img style="width: auto; height: auto;" src="./img/train.jpg" alt="logo"></p>
+    </div>
+    <br>
+    <span style="width: 80%; margin: auto; display: flex;">
+      <div style="background-color: #b4c6a6;
+        margin: auto;
+        width: 33%;
+        height: 300px;
+        margin-right: 2%;
+        padding-top: 1%;
+        ">
+        <span style="background-color: cornsilk; font-size: 40px; border-radius: 30px; margin-left: 2%; font-family:cursive">FOR TRAIN</span>
+        <br>
+        <input type="text" style="font-size: 20px; width: 50%; height: 30px; text-align: center; margin-left: 2%; border-radius: 30px; margin-top: 5%;"
+          placeholder="출발역">
+        </br>
+        <input type="text" style="font-size: 20px; width: 50%; height: 30px; text-align: center; margin-top: 2%; margin-left: 2%; border-radius: 30px;"
+        placeholder="도착역">
+        <button style="background-color: cornsilk; width: 15%; height: 20%; border-radius: 30px; font-size: 20px; margin-left: 3%; font-family: fantasy;">ENTER!</button>
+        <br>
+        <input type="date" style="width: 50%; height: 30px; font-style: initial; font-size: 20px; margin-left: 2%; margin-top: 2%; border-radius: 30px;">
+      </div>
+      <div style="height: 100px; width: 33%;background-color: #b4c6a6;margin-right: 2%; padding-top: 1%;">
+        <span style="background-color:cornsilk; border-radius: 30px; margin-left: 1%; font-size: 40px;font-family: fantasy;">Weather</span>
+        <iframe width="100%" height="220" style="background-color: lemonchiffon; margin-top: 5%;"
+          src="https://forecast.io/embed/#lat=37.5662&lon=126.9785&name=목적지&color=#F6A8A6&font=arial&units=si"
+          frameborder="0"></iframe>
+      </div>
+      <div style="height: 300px; width: 33%; background-color: #b4c6a6; padding-top: 1%;">
+        <span style="background-color: cornsilk; margin-top: 5%; margin-left: 5%; font-family: fantasy; font-size: 30px;">SIGN IN</span>
+        <button style="margin-left: 20%; margin-top: 15%; width: 50%; height: 30px; background-color: cornsilk;">SIGN Up</button>
+        <br>
+        <input type="text" style="margin-left: 5%; margin-top: 5%; font-size: 20px; width: 50%; height: 30px; border-radius: 20px; text-align: center;" placeholder="아이디">
+        <br>
+        <input type="text" style="margin-left: 5%; margin-top: 3%; font-size: 20px; width: 50%; height: 30px; border-radius: 30px; text-align: center;" placeholder="비밀번호">
+        <button style="background-color: cornsilk; width: 15%; height: 20%; border-radius: 30px; font-size: 20px; margin-left: 3%; font-family: fantasy;">SIGN IN</button>
+        </div>
+    </span>
+  </main>
+</body>
+
+</html>
